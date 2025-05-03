@@ -19,6 +19,8 @@ export interface Restaurant {
   retentionRate: number;
 }
 
+// File: types.ts (or wherever your types are defined)
+
 export interface Competitor {
   id: string;
   name: string;
@@ -26,8 +28,9 @@ export interface Competitor {
   avgRating: number;
   trend: 'up' | 'down' | 'stable';
   category: string[];
+  placeId: string;
+  vicinity?: string;
 }
-
 export interface MetricData {
   labels: string[];
   datasets: {
